@@ -13,5 +13,23 @@ spring:
       minimum-idle: 3
       maximum-pool-size: 4
 
+spring:
+  redis:
+    host: 192.168.0.128
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        #最大连接数
+        max-active: 8
+        #最多阻塞等待时间 -1表示没有限制
+        max-wait: -1
+        #最大空闲
+        max-idle: 8
+        #最小空闲连接数
+        min-idle: 8
+        #连接超时时间 毫秒
+    timeout: 10000
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
