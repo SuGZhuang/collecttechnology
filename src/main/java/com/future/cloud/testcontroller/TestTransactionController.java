@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class TestTransactionController {
 
-    @GetMapping("/testTransactionEventListener")
-    @TransactionalEventListener(fallbackExecution = true, phase = TransactionPhase.AFTER_COMMIT)
-    public void testTransactionEventListener() {
-
-
-
-    }
+//    @GetMapping("/testTransactionEventListener")
+//    @TransactionalEventListener(fallbackExecution = true, phase = TransactionPhase.AFTER_COMMIT)
+//    public void testTransactionEventListener() {
+//
+//
+//
+//    }
 
 }

@@ -13,9 +13,9 @@ spring:
       minimum-idle: 3
       maximum-pool-size: 4
   redis:
-    host: 192.168.0.128
+    host: r-uf643648d89084c4pd.redis.rds.aliyuncs.com
     port: 6379
-    password: 123456
+    password: ?6.dLOVEve
     jedis:
       pool:
         #最大连接数
@@ -28,6 +28,8 @@ spring:
         min-idle: 8
         #连接超时时间 毫秒
     timeout: 10000
+  resources:
+    static-locations: classpath:/static/,classpath:/templates/
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
