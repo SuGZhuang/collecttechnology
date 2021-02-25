@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Data
@@ -14,6 +15,7 @@ public class InsuredInfo {
 
     private String insuredSex;
 
+    @Size(min = 0, max = 3)
     private Integer age;
 
     private LocalDate birthday;
