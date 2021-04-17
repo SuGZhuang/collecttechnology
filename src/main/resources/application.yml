@@ -33,3 +33,9 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
