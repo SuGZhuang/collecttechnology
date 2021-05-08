@@ -104,6 +104,23 @@
             <classifier>test-binder</classifier>
             <type>test-jar</type>
         </dependency>
+        <!--大数据相关依赖-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-java</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java_2.12</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka_2.12</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+        
     </dependencies>
 
     <dependencyManagement>
