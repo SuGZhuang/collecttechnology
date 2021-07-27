@@ -15,7 +15,7 @@
     <description>云服务</description>
 
     <properties>
-        <java.version>15</java.version>
+        <java.version>1.8</java.version>
         <spring-cloud.version>2020.0.0</spring-cloud.version>
     </properties>
 
@@ -52,10 +52,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <artifactId>spring-boot-starter-undertow</artifactId>
             <groupId>org.springframework.boot</groupId>
@@ -104,22 +104,35 @@
             <classifier>test-binder</classifier>
             <type>test-jar</type>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.0-jre</version>
+        </dependency>
         <!--大数据相关依赖-->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-java</artifactId>
-            <version>1.9.1</version>
+            <version>1.10.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_2.12</artifactId>
-            <version>1.9.1</version>
+            <version>1.10.1</version>
         </dependency>
+        <!--官方demo依赖   之后去除-->
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka_2.12</artifactId>
-            <version>1.9.1</version>
+            <artifactId>flink-walkthrough-common_2.11</artifactId>
+            <version>1.12.3</version>
         </dependency>
+
+        <!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-connector-kafka_2.12</artifactId>-->
+<!--            <version>1.9.1</version>-->
+<!--        </dependency>-->
+
         
     </dependencies>
 
